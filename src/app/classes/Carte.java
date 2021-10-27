@@ -1,9 +1,9 @@
 package app.classes;
-import app.interfaces.Biblioteca;
+import app.interfaces.IBiblioteca;
 
 import java.util.Scanner;
 
-public class Carte implements Biblioteca
+public class Carte implements IBiblioteca
 {
         private String _titlu;
         private int  _nrCapitole;
@@ -18,6 +18,12 @@ public class Carte implements Biblioteca
             _nrPagini = nrPagini;
             _categorie=categorie;
             _autori=autori;
+        }
+        public String detaliiCarte()
+        {
+            String rez= "Cartea cu titlu "+_titlu+" are autorul " +_autori;
+            return rez;
+
         }
         public String getTitlu()
         {

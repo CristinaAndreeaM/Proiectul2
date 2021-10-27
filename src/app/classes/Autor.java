@@ -1,6 +1,6 @@
 package app.classes;
 import java.util.Scanner;
-import app.interfaces.Biblioteca;
+import app.interfaces.IBiblioteca;
 public class Autor
 {
         public String _nume;
@@ -28,7 +28,7 @@ public class Autor
 
         public String toString()
         {
-            return "Autor{" + "Nume='" + _nume + '\'' + ", Varsta=" + _varsta + ", An Debut=" + _anulDebut + '}';
+            return "Nume=" + _nume + '\'' + ", Varsta=" + _varsta + ", An Debut=" + _anulDebut ;
         }
 }
 
